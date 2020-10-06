@@ -13,6 +13,7 @@ app.get("/",function(req,res){
     res.send("heloo from server");
 
 })
-app.listen(4000,function(){
+const port = process.env.port || 4000;
+app.listen(port,function(){
     console.log("server is listening at 4000")
 })
